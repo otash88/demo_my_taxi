@@ -67,7 +67,6 @@ fun MapScreenMainContent(
     onEventDispatcher: (MapScreenContract.Intent) -> Unit
 ) {
     val context = LocalContext.current
-    val progressBarColor = MaterialTheme.colorScheme.primary
     var isLoading by remember { mutableStateOf(false) }
     val mediaPlayer by remember { mutableStateOf(MediaPlayer.create(context, R.raw.click_sound)) }
 

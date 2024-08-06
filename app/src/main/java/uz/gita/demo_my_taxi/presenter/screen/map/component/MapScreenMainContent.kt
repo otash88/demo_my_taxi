@@ -2,6 +2,7 @@ package uz.gita.demo_my_taxi.presenter.screen.map.component
 
 import CustomButton
 import android.annotation.SuppressLint
+import android.content.res.Resources.Theme
 import android.media.MediaPlayer
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
@@ -164,7 +165,7 @@ fun MapScreenMainContent(
 
                                     .height(24.dp)
                                     .width(24.dp),
-                                color = Color.White
+                                color = MaterialTheme.colorScheme.secondary
                             )
                         }
                     }

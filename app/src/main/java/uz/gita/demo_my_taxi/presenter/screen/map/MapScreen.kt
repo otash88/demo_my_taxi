@@ -51,7 +51,7 @@ class MapScreen : Screen {
         model.collectSideEffect(sideEffect = { sideEffect ->
             when (sideEffect) {
                 is MapScreenContract.SideEffect.ShowToast -> {
-                    Toast.makeText(context, sideEffect.message, Toast.LENGTH_LONG).show()
+                   // Toast.makeText(context, sideEffect.message, Toast.LENGTH_LONG).show()
                 }
             }
         })

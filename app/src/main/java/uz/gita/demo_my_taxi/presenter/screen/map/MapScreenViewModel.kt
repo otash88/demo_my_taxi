@@ -14,7 +14,7 @@ import javax.inject.Inject
 @HiltViewModel
 class MapScreenViewModel @Inject constructor(
     private val repository: AppRepository,
-    private val locationRepository: LocationRepository
+    private val locationRepositoryd: LocationRepository
 ) : ViewModel(), MapScreenContract.MapScreenModel {
 
     private val locationFlow: Flow<LatLng> = locationRepository.locationFlow
